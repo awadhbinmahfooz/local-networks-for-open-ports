@@ -1,0 +1,71 @@
+Microsoft Windows [Version 10.0.26100.6584]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Windows\System32>cd "C:\Program Files (x86)\Nmap"
+
+C:\Program Files (x86)\Nmap>nmap -sS 192.168.1.0/24
+Starting Nmap 7.98 ( https://nmap.org ) at 2025-09-22 17:23 +0530
+Stats: 0:02:41 elapsed; 0 hosts completed (0 up), 256 undergoing Ping Scan
+Ping Scan Timing: About 77.64% done; ETC: 17:27 (0:00:46 remaining)
+Stats: 0:02:48 elapsed; 0 hosts completed (0 up), 256 undergoing Ping Scan
+Ping Scan Timing: About 81.10% done; ETC: 17:27 (0:00:39 remaining)
+Nmap done: 256 IP addresses (0 hosts up) scanned in 208.86 seconds
+
+C:\Program Files (x86)\Nmap>run
+'run' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Program Files (x86)\Nmap>ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet 2:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::b792:7eae:f8fe:a31d%10
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . :
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . :
+   IPv6 Address. . . . . . . . . . . : 2405:201:c00d:87c:b227:ca1c:f952:672d
+   Temporary IPv6 Address. . . . . . : 2405:201:c00d:87c:c51c:69f7:4006:e257
+   Link-local IPv6 Address . . . . . : fe80::750a:ef8f:ef60:6d8f%5
+   IPv4 Address. . . . . . . . . . . : 192.168.29.97
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : fe80::ea22:b8ff:fe57:d029%5
+                                       192.168.29.1
+
+Ethernet adapter Bluetooth Network Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+C:\Program Files (x86)\Nmap>nmap -sS 192.168.29.**
+Starting Nmap 7.98 ( https://nmap.org ) at 2025-09-22 17:31 +0530
+Nmap scan report for host.docker.internal (192.168.29.**)
+Host is up (0.00066s latency).
+Not shown: 995 closed tcp ports (reset)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3306/tcp open  mysql
+6646/tcp open  unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 0.37 seconds
+
+C:\Program Files (x86)\Nmap>C:\Program
